@@ -1,0 +1,95 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=IBM+Plex+Sans+Thai:wght@100;200;300;400;500;600;700&display=swap');
+
+body {
+    font-size: 16pt;
+    max-width: 50em;
+    margin: auto;
+    font-family: 'IBM Plex Sans Thai', sans-serif;
+    font-weight: 400;
+}
+
+header {
+    margin-top: 1em;
+}
+h1 {
+    font-size: 3em;
+    font-family: 'IBM Plex Sans Thai', sans-serif;
+}
+
+h1 em, p small {
+    font-family: 'Bad Script', cursive;
+    font-weight: 400;
+    font-style: italic;
+}
+
+h2, h3 {
+    font-family: 'Bad Script', cursive;
+    font-weight: 800;
+    background-color: white;
+    text-align: center;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+figure {
+    display: inline;
+    margin: auto;
+    margin-bottom: -1em;
+    max-width: 700px;
+    min-width: 400px;
+    float: left;
+}
+
+h2#about-the-author {
+    background-color: inherit;
+} 
+
+p.hidden {
+    visibility: hidden;
+    height: 0;
+    transition: all cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition-duration: 500ms;
+}
+
+p.shown {
+    visibility: visible;
+    height: 100%;
+    transition: all cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition-duration: 1000ms;
+}
+
+img {
+    max-width: 100%;
+    min-width: 200px;
+}
+
+footer {
+    display: flex;
+    bottom: 0;
+    padding: .5em;
+    border-radius: .24em;
+}
+
+footer a.btn {
+    width: 8em;
+    margin: auto;
+}
+
+section.gallery article.card {
+    margin-bottom: 2em;
+} 
+
+section.gallery p.card-text
+{
+    margin-top: 0.5em;
+}
+
+article.card {
+    background-color: rgba(128, 128, 128, 0.25);
+}
+
+p.card-text {
+    text-align: justify;
+    padding: 0.25em;
+}
