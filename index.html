@@ -15,9 +15,9 @@
     </head>
     <body>
         <header class="container">
-            <h1 id="harare"><em>Harare</em> in HDR.</h1>
-            <p><small>An Image Gallery</small></p>
-            <nav class="navbar navbar-expand-lg bg-light">
+            <h1 id="harare"><em>Harare</em> in HDR.</h1><h2 id="subheading"><small> An Image Gallery</small></h2>
+            <!--
+                <nav class="navbar navbar-expand-lg bg-light">
                 <div class="continer-fluid">
                     <button
                         class="navbar-toggler"
@@ -39,6 +39,7 @@
                     </div>
                 </div>
             </nav>
+            -->
         </header>
         <main class="container">
             <section>
@@ -55,7 +56,7 @@
                             title="Author's profile picture" /><a
                             class="card-link"
                             title="Lindsay Musona's Instagram page"
-                            href="https://instagram/black_shadow_the_poet"
+                            href="https://instagram.com/black_shadow_the_poet/"
                             ><small>Picture by Lindsay Musonza.</small>
                         </a>
                     </figure>
@@ -85,7 +86,7 @@
                             pictures you can
                             <a
                                 class="card-link"
-                                href="https://instagram.com/the_bearded_weird"
+                                href="https://instagram.com/the_bearded_weird/"
                                 title="Trevour Chidoti's Instagram page"
                                 >visit my Instagram,</a
                             >
@@ -133,7 +134,7 @@
                             alt="A woman is posing for camera on a rooftop."
                             title="First Floor Art Gallery Karigamombe Center" />
                         <p class="card-text">
-                            On this day, some time in May 2022, I visited the
+                            On this day, sometime in May 2022, I visited the
                             First Floor Gallery at Karigamombe center in Harare with some friends.
                             </p>
                             <p id="read-more-3" class="collapse read-more card-text"
@@ -202,34 +203,34 @@
                 </article>
             </section>
         </main>
-        <footer class="container-fluid bg-dark">
-            <h2 id="contact-information" class="text-light">Contact</h2>
+        <footer class="container bg-dark">
+            <h2 id="contact-information" class="rounded">Contact</h2>
             <a
                 class="btn btn-primary"
                 type="button"
-                href="https://twitter/traelincoln"
+                href="https://twitter.com/traelincoln/"
                 title="@traelincoln on twitter page"
                 >Twitter</a
             >
             <a
                 class="btn btn-primary"
                 type="button"
-                href="https://github.com/traelincoln"
+                href="https://github.com/traelincoln/"
                 title="Trevour L Chidoti's Github profile"
                 >Github</a
             >
             <a
                 class="btn btn-primary"
                 type="button"
-                href="https://instagram/the_bearded_weird"
-                title="the_bearded_weird instragram page"
+                href="https://instagram.com/the_bearded_weird/"
+                title="the_bearded_weird instagram page"
                 >Instagram</a
             >
         </footer>
         <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 // Create a table of content and use it as a nav-bar
-                const toc = document.getElementById("table-of-contents");
+                /*const toc = document.getElementById("table-of-contents");
                 document.querySelectorAll("h2").forEach((heading) => {
                     if (
                         heading.textContent &&
@@ -249,7 +250,7 @@
                         listItem.appendChild(linkItem);
                         toc.appendChild(listItem);
                     }
-                });
+                });*/
                 // Give each gallery acticle a heading which is the image's title and make images fluid using bootstrap classes
                 const gallery = document.querySelector("section.gallery");
                 const galleryImages = gallery.querySelectorAll("img");
@@ -274,7 +275,7 @@
                     });
                 });
                 //Use Array.prototype.forEach method to set external links to target new window
-                Array(document.links).forEach( (link) => {
+                Array.prototype.forEach.call(document.links, (link) => {
                     if (link.hostname != document.domain)
                         link.target = "_blank";
                 })
