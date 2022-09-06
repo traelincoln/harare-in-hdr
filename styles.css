@@ -131,3 +131,8 @@ p.card-text {
         transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 1000ms;
     }
 }
+
+a small {
+    font-size: 75%;
+    color: black;
+}
